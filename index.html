@@ -14,6 +14,46 @@
       <h1 id="title">Ananda Waitlist Registration</h1>
       <p id="description">Thank you for your interest in Ananda! Please complete this form for future product updates.</p>
       <form id="survey-form">
+        <fieldset id="personal-info">
+          <legend>Personal Info</legend>
+          <label id="name-label">Name<input id="name" type="text" required placeholder="Please enter your first and last name..." /></label>
+          <label id="email-label">Email<input id="email" type="email" required placeholder="Please enter your email..."/></label>
+          <label id="number-label">Age<input id="number" min="13" max="120" placeholder="Please enter your age..." /></label>
+        </fieldset>
+        <fieldset>
+          <legend>What is your level of meditation experience?</legend>
+          <label><input type="radio" name="experience-level" checked />Absolute Beginner (0-1 years of meditation experience)</label>
+          <label><input type="radio" name="experience-level" />Advanced Beginner (1-5 years)</label>
+          <label><input type="radio" name="experience-level" />Intermediate (5-20 years)</label>
+          <label><input type="radio" name="experience-level" />Expert (20+ years)</label>
+        </fieldset>
+        <fieldset>
+          <legend>Which of the follow features are you interested in? Feel free to select more than one.</legend>
+          <label><input type="checkbox" value="Instructions for Beginners"/>Instructions for Beginners</label>
+          <label><input type="checkbox" value="Insight Practice (Vipassana)"/>Insight Practice (Vipassana)</label>
+          <label><input type="checkbox" value="Concentration Practice (Shamatha)" />Concentration Practice (Shamatha)</label>
+          <label><input type="checkbox" value="Zen Koans" />Zen Koans</label>
+          <label><input type="checkbox" value="Jhanas" />Jhanas</label>
+          <label><input type="checkbox" value="Accountability Partner" />Accountability Partner</label>
+          <label><input type="checkbox" value="Other" />Other</label>
+        </fieldset>
+        <fieldset>
+          <legend>How did you hear about us?</legend>
+          <select id="dropdown">
+            <option>Please Select an Option</option>
+            <option>Word of Mouth</option>
+            <option>Search Engine</option>
+            <option>Social Media</option>
+            <option>Other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Additional Questions or Comments</legend>
+          <label>
+            <textarea></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
       </form>
     </div>
   </body>
