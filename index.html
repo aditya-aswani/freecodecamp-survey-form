@@ -18,14 +18,14 @@
           <legend>Personal Info</legend>
           <label id="name-label">Name<input id="name" type="text" required placeholder="Please enter your first and last name..." /></label>
           <label id="email-label">Email<input id="email" type="email" required placeholder="Please enter your email..."/></label>
-          <label id="number-label">Age<input id="number" min="13" max="120" placeholder="Please enter your age..." /></label>
+          <label id="number-label">Age<input id="number" type="number" min="13" max="120" placeholder="Please enter your age..." /></label>
         </fieldset>
         <fieldset>
           <legend>What is your level of meditation experience?</legend>
-          <label><input type="radio" name="experience-level" checked />Absolute Beginner (0-1 years of meditation experience)</label>
-          <label><input type="radio" name="experience-level" />Advanced Beginner (1-5 years)</label>
-          <label><input type="radio" name="experience-level" />Intermediate (5-20 years)</label>
-          <label><input type="radio" name="experience-level" />Expert (20+ years)</label>
+          <label><input type="radio" value="Absolute Beginner" name="experience-level" checked />Absolute Beginner (0-1 years of meditation experience)</label>
+          <label><input type="radio" value="Advanced Beginner" name="experience-level" />Advanced Beginner (1-5 years)</label>
+          <label><input type="radio" value="Intermediate" name="experience-level" />Intermediate (5-20 years)</label>
+          <label><input type="radio" value="Expert" name="experience-level" />Expert (20+ years)</label>
         </fieldset>
         <fieldset>
           <legend>Which of the follow features are you interested in? Feel free to select more than one.</legend>
@@ -53,7 +53,7 @@
             <textarea></textarea>
           </label>
         </fieldset>
-        <input type="submit" value="Submit" />
+        <input type="submit" id="submit" value="Submit" />
       </form>
     </div>
   </body>
